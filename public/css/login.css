@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    
+}
+
+
+h2{
+    text-align: center;
+}
+
+.para-login{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input, button{
+    max-width: 100%;
+    padding: 9px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.envio button a{
+    color:white;
+    text-decoration: none;
+}
+
+.envio button{
+    width: 95%;
+    background-color: #1259c3;
+    border: solid 1px #666;
+}
+
+
+.envio button[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+
+/*footer{
+    position: relative;
+    top: 400px;
+}*/
+
+@media(min-width: 361px){
+    .para-login{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+}

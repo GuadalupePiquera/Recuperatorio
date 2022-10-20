@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 40px auto;
+    max-width: 90%;
+}
+
+.lawera{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+h2{
+    text-align: center;
+}
+
+
+
+.registro-inicio, .contraseñass{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input, button{
+    max-width: 100%;
+    padding: 9px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subtitulo{
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+
+/*boton envio y borrar*/
+.botones{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.botones .buttoon{
+    width: 50%;
+    background-color: #1259c3;
+    border: solid 1px #666;
+
+}
+
+.botones button[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+.botones a {
+    text-decoration: none;
+    color:white;
+}
+
+.botones button[type="reset"]{
+    color: white;
+}
+
+.botones button[type="reset"]:hover{
+    
+    background-color: #0022AA;
+}
+
+@media(min-width: 361px){
+    main{
+        margin: 40px auto;
+        max-width: 60%;
+    }
+}
+
+@media(min-width: 769px){
+    main{
+        margin: 40px auto;
+        max-width: 30%;
+    }
+}
