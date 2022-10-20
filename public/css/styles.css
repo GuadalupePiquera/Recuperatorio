@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*barra buscador*/
+
+header div .logo,
+header div .buscador{
+    width: 50%;
+
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+/*barra buscador responsive*/
+form{
+    display: flex;
+    width: 100%;
+}
+
+form .la-bara{
+    width: 80%;
+}
+
+/*barra buscador responsive*/
+
+header .buscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 2%;
+    font-size: 11px;
+}
+
+/*barra buscador*/
+header nav{
+    font-size: 12px;
+    /*margin: 10px;*/
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*
+header .buscador input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    width: 100%;
+}
+header .buscador button{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    
+}
+*/
+
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos{
+    width: 70%;
+}
+
+.descuentos,
+.descripcion{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.descripcion{
+    color: #666;
+}
+
+.descripcion{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+
+
+/*---site y navarb----*/
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style-type: none;
+}
+
+.main-navbar a{
+    text-decoration:none;
+    color:#222222;
+    padding: 5px 0;
+    text-align: center;
+    display: inline-block;
+}
+/*---site y navarb----*/
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuentos{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .descripcion{
+    display: block;
+}
+
+
+
+footer{
+    background-color: white;
+}
+
+footer section{
+    display: block;
+    justify-content: center;
+}
+
+.pie-de-pag {
+    text-align: center;
+    padding: 22px 20px;
+}
+
+footer article div i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+footer .pie-de-pag article{
+    padding: 3% 0;
+    display: block;
+    margin: 2% 2% 0 2%;
+}
+
+footer .copyright{
+    text-align: left;
+    padding: 0 4% 3%;
+}
+
+
+
+footer div i:hover{
+    color: #0022AA;
+}
+
+
+
+@media (min-width: 361px){
+    main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .precio,
+    .descuentos{
+        width: 50%;
+    }
+
+    
+    .main-top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .burger-menu{
+        display: none;
+    }
+
+    header .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8px 8px 8px;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li a{
+        margin: 0 5px;
+    }
+
+
+    header div .logo,
+header div .buscador{
+    width: 33%;
+}
+    header.top-header, .top-header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    
+    footer section{
+        display: flex;
+        
+    }
+}
