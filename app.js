@@ -1,22 +1,17 @@
+const path = require('path');
 const express = require('express');
-const app = express();
-const port = process.env.PORT  || 2020;
-
-app.use(express.static('public'));
+const server = express();
 
 
-app.listen (process.env.PORT ||2020, ()=>{
-    console.log('Abriendo el servidor '+port);
-});
+const port = process.env.PORT || 2020;
+server.listen(port, () => console.log('Abriendo el servidor http://localhost:'+port));
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
-});
+const public = path.resolve(__dirname, './public');
 
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
+server.use(express.static(public));
 
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
-});
+server.get('/', (req,res) => res.sendFile(path.resolve(__dirname, './views/home.html')))
+server.get('/login', (req,res) => res.sendFile(path.resolve(__dirname, './views/login.html')))
+server.get('/register', (req,res) => res.sendFile(path.resolve(__dirname, './views/register.html')))
+
+server.get('/', (req,res) => res.send('Bienvenid@ a Mercado Liebre'));
