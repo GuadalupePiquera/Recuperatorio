@@ -1,0 +1,108 @@
+main {
+    text-align: left;
+    width: 70vw;
+    background-color: white;
+    padding: 10px 40px;
+    margin: 50px auto 50px auto;
+    border-radius: 2.5em;
+    box-shadow: 0px 0px 10px #666;
+}
+
+label {
+    display: block;
+    text-align: left;
+    height: 20px;
+    margin: 0px;
+}
+
+.bold {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+main input {
+    background-color: #ebebeb;
+    border-radius: .75em;
+    padding: 0 15px;
+    height: 1.5em;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    width: 100%;
+}
+
+.checkbox {
+    margin-top: 0;
+    width: auto;
+    display: inline-block;
+}
+
+.radio{
+    margin-top: 0;
+    width: auto;
+    display: inline-block;
+}
+
+.file{
+    background-color: white;
+    border-radius: 0;
+    padding: 0;
+    height: 1.5em;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    width: 100%;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: flex-start;
+    gap: 15px;
+    align-content: center;
+}
+div label{
+    display: block;
+}
+div input{
+    display: block;
+    height: auto;
+}
+
+.titular {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    margin: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #666;
+}
+
+button{
+    padding: 10px;
+    border-radius: .7em;
+    transition: all .3s ease
+}
+
+button:hover{
+    border-radius: 1.4em;
+}
+
+.registro {
+    font-weight: bold;
+    background-color: #1259c3;
+}
+
+.registro:hover{
+    background-color: #0022AA;
+    color: white;
+}

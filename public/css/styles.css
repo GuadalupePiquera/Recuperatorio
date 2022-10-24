@@ -1,156 +1,17 @@
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-position: right;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: -5px;
-    margin-bottom: 30px;
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 250px;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
     background-color: #ebebeb;
-    padding: 10px;
 }
 
-.producto{
-    text-align: center;
-    display: inline-block;
-    background-color:white;
-    border: #ebebeb solid 1px;
-    width: 100%;
-    margin-bottom: 10px;
-    transition: all .5s;
-    border-radius: 5px;
-}
-
-.descripciongeneral{  
-    padding: 15px;
-    border-top: #ebebeb solid 1px;
-    display: flex;
-    position: relative;
-    flex-flow:  row wrap;
-    justify-content: center;
- } 
-
-.camionenvio {
-    text-align: right;
-    color: #39b54a;
-    display: block;
-    border: #39b54a solid 1px;
-    background-color: #FFF;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-    border-radius: 50%;
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    transform: rotate(0deg);
-    transition: all .3s;
-}
-
-.producto img{
-    width: 90%;
-}
-
-#visitado , #ofertado{   
-    padding: 8px;
-    color: #666;    
-    text-align: center;
-    font-size: 24px;
-}
-
-.precio{
-    color: black;
-    font-size: 18px;
-    flex-flow: row wrap;
-    width: 30%;
-    justify-content: flex-start;
-}
-
-.descuento {
-    color: #39b54a;
-    font-size: 1rem;
-    flex-flow: row wrap;
-    width: 70%;
-    justify-content: flex-end;
-}
-
-.nombreproducto{
-    display: none;
-}
-
-.detalleproducto{
-    display: none;
-}
-
-
-@media (min-width: 361px){
-    main section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);}
-
-
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.products article{
-        width: 45%;
-    }
-
-    .precio,
-    .descuentos{
-        width: 50%;
-    }
-
-    
-    .main-top-header{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    header .burger-menu{
-        display: none;
-    }
-
-    header .main-navbar{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 8px 8px 8px;
-    }
-
-    .main-navbar ul{
-        display: flex;
-    }
-
-    .main-navbar li a{
-        margin: 0 5px;
-    }
-
-
-    header div .logo,
-header div .buscador{
-    width: 33%;
-}
-    header.top-header, .top-header{
-        display: flex;
-        justify-content: space-around;
-    }
-
-}
-
-@media (min-width: 769px){
-    main section div.products article{
-        width: 22%;
-    }
-
-    
-    footer section{
-        display: flex;
-        
-    }
+html {
+    scroll-behavior: smooth;
 }

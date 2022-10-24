@@ -1,0 +1,69 @@
+@media (min-width: 0px) and (max-width: 479px) {
+    #descripciones {
+        display: none;
+    }
+
+    .navbar {
+        border: red 1px solid;
+        display: none;
+    }
+
+    main section {
+        grid-template-columns: 70vw;
+        grid-template-rows: 85vw 85vw 85vw 85vw;
+    }
+
+    footer article {
+        display: block;
+    }
+
+    #titulares {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 480px) {
+    #descripciones {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    header article {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    footer section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2em;
+    }
+
+    footer article {
+        width: 30%
+    }
+
+    main section {
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 50vw 50vw;
+    }
+
+    main article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+
+@media (min-width: 769px) {
+    main section {
+        grid-template-columns: 22vw 22vw 22vw 22vw;
+        grid-template-rows: 30vw;
+    }
+}
