@@ -1,18 +1,8 @@
 @media (min-width: 0px) and (max-width: 360px) {
-    main {
-    }
-    ::placeholder {
-        color: transparent;
-    }
 }
 
 @media (min-width: 361px) {
-    main {
-    }
-
 }
 
 @media (min-width: 769px) {
-    main {
-    }
 }
